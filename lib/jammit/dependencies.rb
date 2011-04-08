@@ -31,6 +31,7 @@ Jammit.load_configuration(Jammit::DEFAULT_CONFIG_PATH, true) if defined?(Rails)
 require 'jammit/uglifier' if Jammit.compressors.include? :uglifier
 require 'jammit/compressor'
 require 'jammit/packager'
+require 'jammit/middleware'
 
 # Jammit Rails Integration:
 if defined?(Rails)
